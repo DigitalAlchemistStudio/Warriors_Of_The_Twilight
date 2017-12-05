@@ -12,7 +12,7 @@ public class Level : MonoBehaviour
 	void Start()
 	{
 		// Setup Tile Selection
-		Transform TileObjects = this.gameObject.transform.FindChild("Tiles");
+		Transform TileObjects = this.gameObject.transform.Find("Tiles");
 
 		// Get Dimensions
 		for (int i = 0; i < TileObjects.childCount; i++)
@@ -54,7 +54,7 @@ public class Level : MonoBehaviour
 		}
 
 		// Let Tiles know about buildings that are on top of them
-		Transform Buildings = this.gameObject.transform.FindChild("Buildings");
+		Transform Buildings = this.gameObject.transform.Find("Buildings");
 		for (int i = 0; i < Buildings.childCount; i++)
 		{
 			Building building = Buildings.GetChild(i).GetComponent<Building>();
