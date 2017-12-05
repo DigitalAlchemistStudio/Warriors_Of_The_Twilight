@@ -4,10 +4,15 @@
 
 using UnityEngine;
 
-public class Cursor_Controller : MonoBehaviour {
+public class CameraandCursorMovement : MonoBehaviour {
+	
+#region Variables
+#endregion
 
-    public GameObject PlayerCam;
-
+#region Unity Methods
+#endregion Unity
+	
+    // Use this for initialization
 
 	void Start () 
 {
